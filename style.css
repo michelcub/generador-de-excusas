@@ -1,0 +1,26 @@
+.btn {
+  height: 3rem;
+}
+.texto {
+  background: rgb(117, 238, 139);
+  background: linear-gradient(
+    90deg,
+    rgba(117, 238, 139, 0.9444152661064426) 8%,
+    rgba(9, 121, 43, 0.6643032212885154) 23%,
+    rgba(5, 152, 173, 1) 53%,
+    rgba(0, 212, 255, 1) 96%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.border {
+  background: rgb(117, 238, 139);
+  background: linear-gradient(
+    90deg,
+    rgba(117, 238, 139, 0.9444152661064426) 8%,
+    rgba(9, 121, 43, 0.6643032212885154) 23%,
+    rgba(5, 152, 173, 1) 53%,
+    rgba(0, 212, 255, 1) 96%
+  );
+}

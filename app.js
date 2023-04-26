@@ -10,15 +10,16 @@ let when = [
 ];
 
 const generateExcusa = (who, action, what, when) => {
-  let excusa = "";
-  return `${who[Math.floor(Math.random() * 3)]} ${
-    action[Math.floor(Math.random() * 3)]
-  } ${what[Math.floor(Math.random() * 2)]} ${
-    when[Math.floor(Math.random() * 3)]
-  }`;
+  let stringWho = who[Math.floor(Math.random() * 3)];
+  let stringAction = action[Math.floor(Math.random())];
+  let stringWhat = what[Math.floor(Math.random() * 3)];
+  let stringWhen = when[Math.floor(Math.random() * 4)];
+
+  return `${stringWho} ${stringAction} ${stringWhat} ${stringWhen}`;
 };
 
 console.log(generateExcusa(who, action, what, when));
+
 let display = document.querySelector("#excuse");
 display.innerHTML += generateExcusa(who, action, what, when);
 

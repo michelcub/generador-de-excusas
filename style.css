@@ -24,3 +24,8 @@
     rgba(0, 212, 255, 1) 96%
   );
 }
+
+.emoji-fire {
+  width: 6em;
+  height: auto;
+}

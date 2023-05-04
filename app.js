@@ -9,7 +9,7 @@ let when = [
   "while I was praying",
 ];
 
-const generateExcusa = (who, action, what, when) => {
+const generateExcuseRandom = (who, action, what, when) => {
   let stringWho = who[Math.floor(Math.random() * 3)];
   let stringAction = action[Math.floor(Math.random())];
   let stringWhat = what[Math.floor(Math.random() * 3)];
@@ -18,12 +18,14 @@ const generateExcusa = (who, action, what, when) => {
   return `${stringWho} ${stringAction} ${stringWhat} ${stringWhen}`;
 };
 
-console.log(generateExcusa(who, action, what, when));
+console.log(generateExcuseRandom(who, action, what, when));
 
-let display = document.querySelector("#excuse");
-display.innerHTML += generateExcusa(who, action, what, when);
+let paragraphExcuse = document.querySelector("#excuse");
 
-let btn = document.querySelector("#generate");
-btn.addEventListener("click", () => {
+paragraphExcuse.innerHTML += generateExcuseRandom(who, action, what, when);
+
+let btnGenerateExcuse = document.querySelector("#btnGenerateExcuse");
+
+btnGenerateExcuse.addEventListener("click", () => {
   location.reload();
 });

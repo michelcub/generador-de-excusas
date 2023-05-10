@@ -18,7 +18,7 @@ const generateExcuseRandom = (who, action, what, when) => {
   return `${stringWho} ${stringAction} ${stringWhat} ${stringWhen}`;
 };
 
-console.log(generateExcuseRandom(who, action, what, when));
+
 
 let paragraphExcuse = document.querySelector("#excuse");
 
